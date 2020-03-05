@@ -1,4 +1,3 @@
-from page.base_page import BasePage
 from page.main import Main
 
 
@@ -8,4 +7,7 @@ class TestContact:
 
     def test_contact(self):
         self.contact = self.main.goto_add_member().add_member()
-        assert self.contact.get_member("MrDong1")
+        assert self.contact.get_member() == "MrDong"
+
+
+

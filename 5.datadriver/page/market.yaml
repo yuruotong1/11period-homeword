@@ -1,0 +1,3 @@
+- by: id
+  locator: action_search
+  action: click
