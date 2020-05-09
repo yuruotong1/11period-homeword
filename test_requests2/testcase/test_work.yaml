@@ -1,0 +1,9 @@
+data: ['demo1', 'demo2', 'demo3']
+steps:
+  - {method: tag.get}
+  - {path: '$..tag[?(@.name=="${name}")]', extract before}
+  - {method: tag.add, name: "${name}"}
+  - {method: tag.get}
+  - {path: '$..tag[?(@.name=="${name}")]', extract after}
+  - assert: '1 == 1'
+

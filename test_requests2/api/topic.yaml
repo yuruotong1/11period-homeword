@@ -1,0 +1,19 @@
+create_topic:
+  method: post
+  url: https://home.testing-studio.com/posts.json
+  params:
+    Api-Key: ac0a96ece9875adbecf66ee1189f22befcad2b3e73f3aa1afb3a67cb17f840b5
+    Api-Username: ruotongyu
+  json:
+    title: hello
+    raw: rawrawrawrawrawrawrawrawrawr
+    category: 18
+
+
+
+get_categories:
+  method: get
+  url: https://discourse.example.com/categories.json
+  params:
+    Api-Key: ac0a96ece9875adbecf66ee1189f22befcad2b3e73f3aa1afb3a67cb17f840b5
+    Api-Username: ruotongyu
